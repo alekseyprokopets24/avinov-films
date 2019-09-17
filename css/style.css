@@ -1,0 +1,120 @@
+/* header */
+
+.header-logo__first-word {
+    color: #fff;
+}
+
+.header-logo__last-word {
+    color: #FFE500;
+}
+
+.header-logo {
+    text-transform: uppercase;
+    font-family: Marske;
+    font-size: 26px;
+    line-height: 26px;
+    width: 124px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo-icon {
+    margin-left: 16px;
+    width: 6px;
+    height: 20px;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-btn {
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/menu-icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.soc-link__item {
+    width: 30px;
+    height: 30px;
+}
+
+.soc-link {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px 42px;
+    align-items: center;
+}
+
+.instagram {
+    background-image: url(../img/instagram.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.telegram {
+    background-image: url(../img/telegram.png);
+}
+
+.header {
+    background: #181818;
+    padding-top: 30px;
+    padding-bottom: 130px;
+    max-width: 100vh;
+}
+
+.header__main {
+    background-image: url(../img/header-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 12px;
+}
+
+.header__main-text {
+    margin-bottom: 90px;
+}
+
+.header-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #FFE600;
+    margin-bottom: 20px;
+    width: 290px;
+}
+
+.header-title__last-word {
+    color: #fff;
+}
+
+.header-descrption {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    width: 260px;
+    margin-bottom: 20px;
+}
+
+.hr-line {
+    height: 2px;
+    background-color: #FFE500;
+    border-radius: 3px;
+}

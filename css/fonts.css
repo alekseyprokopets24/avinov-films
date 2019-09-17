@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Marske;
+    src: url(../fonts/Marske.woff);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.otf);
+    font-weight: 500;
+}
+@import url(//db.onlinewebfonts.com/c/216218e739f1bfeab0932a5092b805e1?family=Marske);

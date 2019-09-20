@@ -52,7 +52,7 @@
 .header-top {
     display: flex;
     justify-content: space-between;
-    padding: 0 12px 42px;
+    padding: 0 16px 42px;
     align-items: center;
 }
 
@@ -79,7 +79,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 40px 12px;
+    padding: 40px 16px;
 }
 
 .header__main-text {
@@ -117,4 +117,52 @@
     height: 2px;
     background-color: #FFE500;
     border-radius: 3px;
+}
+
+.portfolio-section {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 40px;
+    background-image: url(../img/portfolio-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    
+}
+
+.portfolio-section__link {
+    color: #fff;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 22px 44px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    background: transparent;
+}
+
+.portfolio-section__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+.portfolio-section__descr {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 40px;
+}
+.portfolio-section__container:nth-child(1){
+    margin-bottom: 60px;
 }

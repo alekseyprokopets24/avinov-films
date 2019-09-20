@@ -14,4 +14,15 @@
     src: url(../fonts/Montserrat-Medium.otf);
     font-weight: 500;
 }
-@import url(//db.onlinewebfonts.com/c/216218e739f1bfeab0932a5092b805e1?family=Marske);
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Light.otf);
+    font-weight: 300;
+}

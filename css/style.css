@@ -28,15 +28,10 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.menu-btn {
-    height: 50px;
-    width: 50px;
-    background-image: url(../img/menu-icon.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.hamburger{
+    z-index: 9999;
 }
+
 
 .soc-link__item {
     width: 30px;
@@ -66,10 +61,13 @@
 .telegram {
     background-image: url(../img/telegram.png);
 }
+
+
 .nav-bar-hidden{
     display: none;
 }
 .nav-bar {
+    z-index: 999;    
     position: fixed;
     top: 0;
     background: #181818;
@@ -116,11 +114,12 @@
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 30px;
-    right: 40px;
+    top: 32px;
+    right: 30px;
 }
 
 .header {
+    position: relative;
     background: #181818;
     padding-top: 30px;
     padding-bottom: 130px;
@@ -129,6 +128,7 @@
 }
 
 .header__main {
+    position: relative;
     background-image: url(../img/header-bg.png);
     background-size: cover;
     background-position: center;
@@ -596,4 +596,52 @@
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+}
+.bg-el{
+    background-image: url(../img/bg-el.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+.bg-el-list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.bg-el:nth-child(1){
+    left: 25%;
+    animation-delay: 0s;
+}
+
+
+.bg-el:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.bg-el:nth-child(3){
+    left: 70%;
+    animation-delay: 4s;
+}
+
+.bg-el:nth-child(4){
+    left: 40%;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.bg-el:nth-child(5){
+    left: 65%;
+    animation-delay: 0s;
 }

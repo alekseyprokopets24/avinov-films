@@ -1,14 +1,11 @@
-const showHiddenNavBar = document.querySelector('.menu-btn');
 const hiddenNav = document.querySelector('.nav-bar');
-const closeHiddenNavBar = document.querySelector('.btn-close-menu');
+const hamburger = document.querySelector('.hamburger');
 
-showHiddenNavBar.addEventListener('click', showHiddenMenu);
-closeHiddenNavBar.addEventListener('click', closeHiddenMenu);
+hamburger.addEventListener('click', addclass);
 
-function showHiddenMenu(){
-    hiddenNav.classList.toggle('nav-bar-hidden')
-}
 
-function closeHiddenMenu(){
-    hiddenNav.classList.toggle('nav-bar-hidden')
+function addclass(){
+    hamburger.classList.toggle('is-active');
+    hiddenNav.classList.toggle('nav-bar-hidden');
+    
 }

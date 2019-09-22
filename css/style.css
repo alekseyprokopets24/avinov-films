@@ -66,12 +66,66 @@
 .telegram {
     background-image: url(../img/telegram.png);
 }
+.nav-bar-hidden{
+    display: none;
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    background: #181818;
+    height: 100vh;
+    width: 100vw;
+}
+.hidden-soc-link{
+    position: absolute;
+    bottom: 60px;
+    left: 16px;
+}
+
+.hidden-nav-bar-logo {
+    position: absolute;
+    top: 100px;
+    left: 16px;
+}
+.hidden-nav-bar__list-item{
+    margin-bottom: 30px;
+}
+.hidden-nav-bar{
+    position: absolute;
+    top: 210px;
+    left: 16px;
+}
+.hidden-nav-bar__link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.btn-close-menu {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    background-image: url(../img/menu-close.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
 
 .header {
     background: #181818;
     padding-top: 30px;
     padding-bottom: 130px;
-    max-width: 100vh;
+    height: 100vh;
+    position: relative;
 }
 
 .header__main {
@@ -130,7 +184,6 @@
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-    
 }
 
 .portfolio-section__link {
@@ -155,6 +208,7 @@
     line-height: 24px;
     margin-bottom: 50px;
 }
+
 .portfolio-section__descr {
     font-family: Montserrat;
     font-style: normal;
@@ -163,6 +217,383 @@
     line-height: 22px;
     margin-bottom: 40px;
 }
-.portfolio-section__container:nth-child(1){
+
+.portfolio-section__container:nth-child(1) {
     margin-bottom: 60px;
+}
+
+.whywe-section__list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 160px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.whywe-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.whywe-section {
+    padding: 80px 16px 40px;
+}
+
+.whywe-section__title {}
+
+.list-item__descr {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.whywe-section__list-item:nth-child(2n+1) {
+    margin-bottom: 40px;
+    margin-right: 15px;
+}
+
+.whywe-section__list-item:nth-child(2n) {
+    margin-bottom: 40px;
+}
+
+.whywe-section__list-item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+}
+
+.section-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.list-item__img {
+    margin-bottom: 24px;
+}
+
+.process-section {
+    padding: 40px 16px;
+}
+
+.process-section__title {
+    text-align: right;
+    width: 280px;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+
+.process-section__list-item__descr {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 300;
+}
+
+.process-section__list-item__hr {
+    height: 90px;
+    width: 10px;
+    background-image: url(../img/process-list/hr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.process-section__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.process-section__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.section {
+    background-color: #181818;
+}
+
+.process-section__list-item__img {
+    margin-bottom: 20px;
+}
+
+.our-works-section__title {
+    width: 300px;
+    margin-bottom: 60px;
+}
+
+.our-works-section {
+    padding: 40px 16px 80px;
+}
+
+.mission-section__title {
+    margin-bottom: 12px;
+}
+
+.content-item__img {
+    max-width: 100%;
+}
+
+.content-item {
+    width: 340px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.content-item:last-child {
+    margin-bottom: 0;
+}
+
+.content-item:nth-child(-n+3)::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/our-work-content/button.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.our-works-section__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.see-all-works {
+    color: #FFFFFF;
+    background: transparent;
+    padding: 14px 28px;
+    border: 1px solid #FFFFFF;
+}
+
+.see-more-container {
+    text-align: center;
+}
+
+.mission-section__title {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.offers__item {
+    width: 130px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.offers__item:nth-child(2n+1) {
+    margin-bottom: 40px;
+    margin-right: 15px;
+}
+
+.offers__item:nth-child(2n) {
+    margin-bottom: 40px;
+}
+
+.offers__item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+}
+
+.container-text {
+    width: 300px;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 151.4%;
+    margin-bottom: 40px;
+}
+
+.mission-section {
+    background-image: url(../img/mission-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mission-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(24, 24, 24, 0.5);
+    padding: 30px 20px;
+}
+
+.mission-section {
+    padding: 20px 16px 60px;
+}
+
+.offers-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers__title {
+    width: 200px;
+    text-align: right;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.constacts-section__title {
+    width: 240px;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.contacts-section {
+    padding: 30px 16px;
+    background-image: url(../img/header-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tel-number {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 214px;
+    text-align: right;
+    margin-bottom: 30px;
+    margin-right: auto;
+}
+
+.email {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFE500;
+    margin-bottom: 90px;
+}
+
+.contact-us-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 40px 16px;
+    background-image: url(../img/form-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.send-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+}
+
+.form-label {
+    width: 300px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.form-input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    width: 100%;
+}
+
+.contact-us-section__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    color: #181818;
+    margin-bottom: 30px;
+}
+
+.contact-us-section__descr {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #181818;
+    margin-bottom: 40px;
+}
+
+.form-input:focus:valid {
+    border-bottom: 1px solid green;
+}
+
+.form-input:focus:not(:valid) {
+    border-bottom: 1px solid red;
+}
+
+.btn-send-form {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    padding: 14px 80px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    background: transparent;
+    margin: 0 auto;
+}
+
+.footer {
+    padding: 24px 0;
+    margin: 0 auto;
+    background: #181818;
+    text-align: center;
+}
+
+.copyrights {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
 }

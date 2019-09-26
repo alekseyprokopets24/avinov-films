@@ -7,6 +7,29 @@
 .header-logo__last-word {
     color: #FFE500;
 }
+.preloader-out{
+    animation: preload-out 0.5s;
+}
+.preloader{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: #181818;
+    z-index: 9999;
+
+}
+.preloader-container-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .header-logo {
     text-transform: uppercase;
@@ -18,6 +41,38 @@
     flex-wrap: wrap;
     align-items: center;
 }
+.preloader-text:first-child{
+    animation: preloader-text-first 3s;
+}
+.preloader-text:last-child{
+    animation: preloader-text-second 3s;
+}
+.overflow-hidden {
+    animation: overflow .5s;
+}
+
+.preloader__logo{
+    animation: preloader-logo 3s;
+    padding: 0 20px;
+}
+.preloader-text{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 26px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.overflow {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    opacity: 0;
+}
 
 .logo-icon {
     margin-left: 16px;
@@ -28,14 +83,16 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.hamburger{
-    z-index: 9999;
+
+.hamburger {
+    z-index: 1000;
 }
 
-
 .soc-link__item {
+    cursor: pointer;
     width: 30px;
     height: 30px;
+    z-index: 99;
 }
 
 .soc-link {
@@ -62,19 +119,20 @@
     background-image: url(../img/telegram.png);
 }
 
-
-.nav-bar-hidden{
+.nav-bar-hidden {
     display: none;
 }
+
 .nav-bar {
-    z-index: 999;    
-    position: fixed;
+    z-index: 999;
+    position: absolute;
     top: 0;
     background: #181818;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
 }
-.hidden-soc-link{
+
+.hidden-soc-link {
     position: absolute;
     bottom: 60px;
     left: 16px;
@@ -85,14 +143,17 @@
     top: 100px;
     left: 16px;
 }
-.hidden-nav-bar__list-item{
+
+.hidden-nav-bar__list-item {
     margin-bottom: 30px;
 }
-.hidden-nav-bar{
+
+.hidden-nav-bar {
     position: absolute;
     top: 210px;
     left: 16px;
 }
+
 .hidden-nav-bar__link {
     font-family: Montserrat;
     font-style: normal;
@@ -101,7 +162,6 @@
     line-height: 24px;
     color: #FFFFFF;
     text-decoration: none;
-
 }
 
 .btn-close-menu {
@@ -121,9 +181,7 @@
 .header {
     position: relative;
     background: #181818;
-    padding-top: 30px;
-    padding-bottom: 130px;
-    height: 100vh;
+    padding: 30px 0 80px;
     position: relative;
 }
 
@@ -174,8 +232,11 @@
 }
 
 .portfolio-section {
+    height: 100vh;
     display: flex;
     align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
     flex-direction: column;
     text-align: center;
     padding: 40px 40px;
@@ -217,6 +278,13 @@
     line-height: 22px;
     margin-bottom: 40px;
 }
+.portfolio-section__container{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .portfolio-section__container:nth-child(1) {
     margin-bottom: 60px;
@@ -226,7 +294,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 160px;
+    width: 180px;
     text-align: center;
     padding: 20px 0;
 }
@@ -252,6 +320,7 @@
     line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+    max-width: 140px;
 }
 
 .whywe-section__list-item:nth-child(2n+1) {
@@ -399,7 +468,7 @@
     width: 130px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
 }
@@ -451,7 +520,6 @@
 .offers-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
 }
 
@@ -496,7 +564,6 @@
     font-size: 18px;
     line-height: 22px;
     color: #FFE500;
-    margin-bottom: 90px;
 }
 
 .contact-us-section {
@@ -528,6 +595,7 @@
 }
 
 .form-input {
+    border-radius: 0px;
     border: none;
     border-bottom: 1px solid #000000;
     margin-bottom: 40px;
@@ -597,7 +665,8 @@
     line-height: 17px;
     color: #FFFFFF;
 }
-.bg-el{
+
+.bg-el {
     background-image: url(../img/bg-el.png);
     width: 50px;
     height: 50px;
@@ -608,7 +677,8 @@
     animation: animate 25s linear infinite;
     bottom: -150px;
 }
-.bg-el-list{
+
+.bg-el-list {
     position: absolute;
     top: 0;
     left: 0;
@@ -617,31 +687,29 @@
     overflow: hidden;
 }
 
-
-.bg-el:nth-child(1){
+.bg-el:nth-child(1) {
     left: 25%;
     animation-delay: 0s;
 }
 
-
-.bg-el:nth-child(2){
+.bg-el:nth-child(2) {
     left: 10%;
     animation-delay: 2s;
     animation-duration: 12s;
 }
 
-.bg-el:nth-child(3){
+.bg-el:nth-child(3) {
     left: 70%;
     animation-delay: 4s;
 }
 
-.bg-el:nth-child(4){
+.bg-el:nth-child(4) {
     left: 40%;
     animation-delay: 0s;
     animation-duration: 18s;
 }
 
-.bg-el:nth-child(5){
+.bg-el:nth-child(5) {
     left: 65%;
     animation-delay: 0s;
 }

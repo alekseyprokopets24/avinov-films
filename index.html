@@ -15,14 +15,20 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <div class="preloader">
+            <div class="preloader-container-text">
+                <h2 class="preloader-text">Avinov</h2>
+                <img class="preloader__logo" src="./img/logo.png" alt="">
+                <h2 class="preloader-text">Films</h2>
+            </div>
+        </div>
+        <div class="overflow"></div>
+        <header class="header" id="general">
             <div class="header-top">
                 <div class="header-logo"><span class="header-logo__first-word">avinov</span>
                     <div class="logo-icon"></div>
                     <span class="header-logo__last-word">production</span>
                 </div>
-
-
                 <button class="hamburger hamburger--spin " type="button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
@@ -35,21 +41,25 @@
                     <div class="logo-icon"></div>
                     <span class="header-logo__last-word">production</span>
                 </div>
-                <nav class="hidden-nav-bar">
+                <nav class="hidden-nav-bar" id="menu">
                     <ul class="hidden-nav-bar__list">
                         <li class="hidden-nav-bar__list-item">
-                            <a href="#" class="hidden-nav-bar__link">Главная</a>
+                            <a href="#general" class="hidden-nav-bar__link general-link">Главная</a>
                         </li>
-                        <li class="hidden-nav-bar__list-item"><a href="#" class="hidden-nav-bar__link">Услуги</a>
+                        <li class="hidden-nav-bar__list-item"><a href="#our-works"
+                                class="hidden-nav-bar__link">Портфолио</a>
                         </li>
-                        <li class="hidden-nav-bar__list-item"><a href="#" class="hidden-nav-bar__link">Портфолио</a>
+                        <li class="hidden-nav-bar__list-item"><a href="#mission" class="hidden-nav-bar__link">Услуги</a>
                         </li>
-                        <li class="hidden-nav-bar__list-item"> <a href="#" class="hidden-nav-bar__link">Контакты</a>
+
+                        <li class="hidden-nav-bar__list-item"> <a href="#contacts"
+                                class="hidden-nav-bar__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="hidden-soc-link soc-link">
-                    <div class="soc-link__item instagram"></div>
+                    <a target="_blank" href="https://www.instagram.com/avinov.films/"
+                        class="soc-link__item instagram"></a>
                     <div class="soc-link__item telegram"></div>
                 </div>
             </div>
@@ -63,7 +73,7 @@
                 </div>
                 <div class="header__main-text">
                     <h1 class="header-title">
-                        Video
+                        Avinov
                         <span class="header-title__last-word">production</span>
                     </h1>
                     <h2 class="header-descrption">Создаем не просто видео, а визуализируем идеи приносящие прибыль и
@@ -72,7 +82,8 @@
                     <div class="hr-line"></div>
                 </div>
                 <div class="soc-link">
-                    <div class="soc-link__item instagram"></div>
+                    <a href="https://www.instagram.com/avinov.films/" target="_blank"
+                        class="soc-link__item instagram"></a>
                     <div class="soc-link__item telegram"></div>
                 </div>
             </div>
@@ -81,16 +92,16 @@
             <div class="portfolio-section__container">
                 <h2 class="portfolio-section__title">ПОРТФОЛИО</h2>
                 <h3 class="portfolio-section__descr">Посмотрите наши работы</h3>
-                <button href="#" class="portfolio-section__link">ПОРТФОЛИО</button>
+                <a href="#our-works" class="portfolio-section__link">ПОРТФОЛИО</a>
             </div>
             <div class="portfolio-section__container">
                 <h2 class="portfolio-section__title">КОНТАКТЫ</h2>
                 <h3 class="portfolio-section__descr">Давайте создадим свой фильм</h3>
-                <button href="#" class="portfolio-section__link">КОНТАКТЫ</button>
+                <a href="#contacts" class="portfolio-section__link">КОНТАКТЫ</a>
             </div>
 
         </section>
-        <section class="section whywe-section">
+        <section class="section whywe-section" id="whywe">
             <h2 class="whywe-section__title section-title">Почему мы?</h2>
             <ul class="whywe-section__list">
                 <li class="whywe-section__list-item">
@@ -119,7 +130,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section process-section">
+        <section class="section process-section" id="process">
             <h2 class="section-title  process-section__title">Процесс работы с нами</h2>
             <ul class="process-section__list">
                 <li class="process-section__list-item">
@@ -146,7 +157,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section our-works-section">
+        <section class="section our-works-section" id="our-works">
             <h2 class="section-title  our-works-section__title">Примеры наших работ</h2>
             <ul class="our-works-section__content">
                 <li class="content-item">
@@ -167,10 +178,10 @@
                 </li>
             </ul>
             <div class="see-more-container">
-                <button class="see-all-works">Посмотреть все работы</button>
+                <button class="see-all-works" id="btnHrefInst">Посмотреть все работы</button>
             </div>
         </section>
-        <section class="section mission-section">
+        <section class="section mission-section" id="mission">
             <h2 class="section-title  mission-section__title">Наша
                 миссия</h2>
             <div class="mission-section__container">
@@ -201,16 +212,13 @@
                 </div>
             </div>
         </section>
-        <section class="section contacts-section">
+        <section class="section contacts-section" id="contacts">
             <h2 class="section-title  constacts-section__title">Вы можете
                 связяться с нами</h2>
             <h3 class="tel-number">Телефон: 063-749-10-70
                 095-220-28-72 </h3>
             <h3 class="email">avinov.artem@gmail.com</h3>
-            <div class="soc-link">
-                <div class="soc-link__item instagram"></div>
-                <div class="soc-link__item telegram"></div>
-            </div>
+            ]
         </section>
         <section class="contact-us-section">
             <h2 class="contact-us-section__title">Или рассказать
@@ -237,6 +245,7 @@
             <div class="copyrights">Все права защищены. © 2019</div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -5,18 +5,19 @@ const header = document.querySelector('.header');
 const generalLink = document.querySelector('.general-link');
 const btnHrefInst = document.querySelector('#btnHrefInst')
 const preloader = document.querySelector('.preloader');
+const preloaderText = document.querySelector('.preloader-container-text');
 
 hamburger.addEventListener('click', addclass);
 generalLink.addEventListener('click', reloadPage);
 btnHrefInst.addEventListener('click', showInstPage);
 
 
-function showInstPage(){
+function showInstPage() {
     window.open('https://www.instagram.com/avinov.films/', '_blank');
 
 }
 
-function reloadPage(){
+function reloadPage() {
     document.location.reload(true);
 }
 
@@ -24,16 +25,20 @@ function addclass() {
     hamburger.classList.toggle('is-active');
     hiddenNav.classList.toggle('nav-bar-hidden');
     overflow.classList.toggle('overflow-hidden');
-    setTimeout(()=>{
+    setTimeout(() => {
         overflow.classList.toggle('overflow-hidden');
 
     }, 500)
 }
 
-setTimeout(()=>{
+
+
+setTimeout(() => {
     preloader.classList.add('preloader-out');
+    preloaderText.style.display = 'none';
+    document.body.style.overflow = 'visible';
 }, 3000)
-setTimeout(()=>{
+setTimeout(() => {
     preloader.style.display = 'none';
 
 }, 3500)

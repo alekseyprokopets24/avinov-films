@@ -8,7 +8,6 @@
     color: #FFE500;
 }
 .preloader-out{
-    animation: preload-out 0.5s;
 }
 .border__item{
     position: absolute;
@@ -60,6 +59,8 @@
     transform: translate(-50%, -50%);
 }
 .preloader{
+    animation: preload-out 0.5s;
+    animation-delay: 2.5s;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -89,10 +90,10 @@
     align-items: center;
 }
 .preloader-text:first-child{
-    animation: preloader-text-first 5s;
+    animation: preloader-text-first 3s;
 }
 .preloader-text:last-child{
-    animation: preloader-text-second 5s;
+    animation: preloader-text-second 3s;
 }
 .overflow-hidden {
     animation: overflow .3s;

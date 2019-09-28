@@ -56,7 +56,7 @@ function addclass() {
 
 setTimeout(() => {
     preloader.classList.add('preloader-out');
-    preloaderText.remove();
+    preloader.remove();
     document.body.style.overflow = 'visible';
 }, 3000)
 

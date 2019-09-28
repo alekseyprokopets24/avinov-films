@@ -13,48 +13,114 @@
 
 @keyframes preloader-logo {
   0% {
-    transform: rotate(0deg);
-  }
-  100% {
     transform: rotate(360deg);
+  }
+  25%{
+    transform: rotate(270deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(0deg);
   }
 }
 
 @keyframes preloader-text-first {
   0% {
     transform: translateY(100%);
+
   }
-  50% {
+  25%{
     transform: translateY(0%);
+
   }
-  80% {
+  50%{
     transform: translateY(0%);
+    
   }
-  100% {
+  75% {
+    transform: translateY(0%);
+    
+  }
+  100%{
     transform: translateY(-100%);
+    
   }
+
 }
 
 @keyframes preloader-text-second {
   0% {
     transform: translateY(-100%);
+
   }
-  50% {
+  25%{
     transform: translateY(0%);
+
   }
-  80% {
+  50%{
     transform: translateY(0%);
+    
   }
-  100% {
+  75% {
+    transform: translateY(0%);
+    
+  }
+  100%{
     transform: translateY(100%);
+    
   }
 }
 
 @keyframes preload-out {
   0% {
-    height: 100vh;
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
   }
   100% {
-    height: 0vh;
+    opacity: 0;
+  }
+}
+
+@keyframes border-top-bot{
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    width: 100%;
+    opacity: 1;
+
+  }
+}
+
+@keyframes border-right-left{
+  0%{
+    height: 0%;
+    opacity: 0;
+
+  }
+  100%{
+    height: 100%;
+    opacity: 1;
+
+  }
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
   }
 }

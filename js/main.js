@@ -6,6 +6,27 @@ const generalLink = document.querySelector('.general-link');
 const btnHrefInst = document.querySelector('#btnHrefInst')
 const preloader = document.querySelector('.preloader');
 const preloaderText = document.querySelector('.preloader-container-text');
+const borderItem = document.querySelectorAll('.border__item');
+
+
+
+
+
+
+for (let i = 0; i < borderItem.length; i++) {
+    sec = (i+1)*750;
+    
+    setTimeout(()=>{
+        borderItem[i].classList.add('border-showen');
+    }, sec)
+
+}
+
+
+
+
+
+
 
 hamburger.addEventListener('click', addclass);
 generalLink.addEventListener('click', reloadPage);
@@ -28,19 +49,20 @@ function addclass() {
     setTimeout(() => {
         overflow.classList.toggle('overflow-hidden');
 
-    }, 500)
+    }, 200)
 }
 
 
 
 setTimeout(() => {
     preloader.classList.add('preloader-out');
-    preloaderText.style.display = 'none';
+    preloaderText.remove();
     document.body.style.overflow = 'visible';
 }, 3000)
-setTimeout(() => {
-    preloader.style.display = 'none';
 
+setTimeout(()=>{
+    preloader.remove();
 }, 3500)
+
 
 $(function () { $("a[href*=#]:not([href=#])").click(function () { if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) { var t = $(this.hash); if (t = t.length ? t : $("[name=" + this.hash.slice(1) + "]"), t.length) return $("html,body").animate({ scrollTop: t.offset().top }, 3000), !1 } }) });

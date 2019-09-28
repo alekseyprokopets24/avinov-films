@@ -10,13 +10,61 @@
 .preloader-out{
     animation: preload-out 0.5s;
 }
+.border__item{
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+}
+
+.border-showen{
+    opacity: 1;
+}
+.border-left{
+    left: 0;
+    width: 1px;
+    height: 100%;
+    animation: border-right-left .75s;
+    animation-delay: 2.15s;
+
+}
+.border-right{
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    animation: border-right-left .75s;
+    animation-delay: .75s;
+
+}
+.border-top{
+    animation: border-top-bot .75s;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    animation-delay: 1.5s;
+}
+.border-bottom{
+    animation: border-top-bot .75s;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+}
+.border{
+    z-index: 999;
+    height: 50%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .preloader{
     height: 100vh;
     width: 100%;
     position: fixed;
     background: #181818;
     z-index: 9999;
-
 }
 .preloader-container-text{
     position: absolute;
@@ -41,17 +89,17 @@
     align-items: center;
 }
 .preloader-text:first-child{
-    animation: preloader-text-first 3s;
+    animation: preloader-text-first 5s;
 }
 .preloader-text:last-child{
-    animation: preloader-text-second 3s;
+    animation: preloader-text-second 5s;
 }
 .overflow-hidden {
-    animation: overflow .5s;
+    animation: overflow .3s;
 }
 
 .preloader__logo{
-    animation: preloader-logo 2s;
+    animation: preloader-logo 3s;
     padding: 0 20px;
 }
 .preloader-text{

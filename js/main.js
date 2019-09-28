@@ -7,7 +7,7 @@ const btnHrefInst = document.querySelector('#btnHrefInst')
 const preloader = document.querySelector('.preloader');
 const preloaderText = document.querySelector('.preloader-container-text');
 const borderItem = document.querySelectorAll('.border__item');
-
+const arrowToTop = document.querySelector('.arrow-to-top');
 
 
 
@@ -27,11 +27,14 @@ for (let i = 0; i < borderItem.length; i++) {
 
 
 
-
+arrowToTop.addEventListener('click', toTop);
 hamburger.addEventListener('click', addclass);
 generalLink.addEventListener('click', reloadPage);
 btnHrefInst.addEventListener('click', showInstPage);
 
+
+function toTop(){
+}
 
 function showInstPage() {
     window.open('https://www.instagram.com/avinov.films/', '_blank');
@@ -39,7 +42,7 @@ function showInstPage() {
 }
 
 function reloadPage() {
-    document.location.reload(true);
+    addclass();
 }
 
 function addclass() {
@@ -64,4 +67,4 @@ setTimeout(()=>{
 }, 3500)
 
 
-$(function () { $("a[href*=#]:not([href=#])").click(function () { if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) { var t = $(this.hash); if (t = t.length ? t : $("[name=" + this.hash.slice(1) + "]"), t.length) return $("html,body").animate({ scrollTop: t.offset().top }, 3000), !1 } }) });
+$(function () { $("a[href*=#]:not([href=#])").click(function () { if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) { var t = $(this.hash); if (t = t.length ? t : $("[name=" + this.hash.slice(1) + "]"), t.length) return $("html,body").animate({ scrollTop: t.offset().top }, 1000), !1 } }) });

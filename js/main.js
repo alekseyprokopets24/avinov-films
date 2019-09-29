@@ -7,9 +7,8 @@ const btnHrefInst = document.querySelector('#btnHrefInst')
 const preloader = document.querySelector('.preloader');
 const preloaderText = document.querySelector('.preloader-container-text');
 const borderItem = document.querySelectorAll('.border__item');
-const arrowToTop = document.querySelector('.arrow-to-top');
-
-
+const jsVideos = document.querySelector('#jsVideos');
+const overflowVideo = document.querySelector('.overflow-video');
 
 
 
@@ -26,14 +25,16 @@ for (let i = 0; i < borderItem.length; i++) {
 
 
 
-
-arrowToTop.addEventListener('click', toTop);
+jsVideos.addEventListener('click', showVideoOverflow);
 hamburger.addEventListener('click', addclass);
 generalLink.addEventListener('click', reloadPage);
 btnHrefInst.addEventListener('click', showInstPage);
 
 
-function toTop(){
+
+function showVideoOverflow(e){
+    overflowVideo.classList.toggle('overflow-video--hidden');
+    
 }
 
 function showInstPage() {

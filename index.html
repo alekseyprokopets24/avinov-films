@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
-<body style="overflow: hidden">
+<!-- overflow: hidden -->
+
+<body style="">
     <div class="wrapper">
         <a class="arrow-to-top" href="#general"></a>
-        <div class="preloader">
+        <!-- <div class="preloader">
             <div class="border">
                 <div class="border__item  border-hide border-bottom"></div>
                 <div class="border__item  border-hide border-right"></div>
@@ -28,13 +31,30 @@
                 <img class="preloader__logo" src="./img/logo.png" alt="">
                 <h2 class="preloader-text">Films</h2>
             </div>
-        </div>
-        <div class="overflow"></div>
+        </div> -->
         <header class="header" id="general">
+            <div class="overflow"></div>
             <div class="header-top">
                 <div class="header-logo"><span class="header-logo__first-word">avinov</span>
                     <div class="logo-icon"></div>
                     <span class="header-logo__last-word">production</span>
+                </div>
+                <div class="nav-bar-desctop">
+
+                    <ul class="nav-bar__list">
+                        <li class="nav-bar__item">
+                            <a href="#general" class="nav-bar__link">Главная</a>
+                        </li>
+                        <li class="nav-bar__item">
+                            <a href="#our-works" class="nav-bar__link">Портфолио</a>
+                        </li>
+                        <li class="nav-bar__item">
+                            <a href="#offers" class="nav-bar__link">Услуги</a>
+                        </li>
+                        <li class="nav-bar__item">
+                            <a href="#contacts" class="nav-bar__link">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
                 <button class="hamburger hamburger--spin " type="button">
                     <span class="hamburger-box">
@@ -44,6 +64,7 @@
             </div>
 
             <div class="nav-bar nav-bar-hidden">
+
                 <div class="header-logo hidden-nav-bar-logo"><span class="header-logo__first-word">avinov</span>
                     <div class="logo-icon"></div>
                     <span class="header-logo__last-word">production</span>
@@ -95,7 +116,7 @@
                 </div>
             </div>
         </header>
-        <section class="section portfolio-section">
+        <section class="section portfolio-section section-desctop">
             <div class="portfolio-section__container">
                 <h2 class="portfolio-section__title">ПОРТФОЛИО</h2>
                 <h3 class="portfolio-section__descr">Посмотрите наши работы</h3>
@@ -108,7 +129,7 @@
             </div>
 
         </section>
-        <section class="section whywe-section" id="whywe">
+        <section class="section whywe-section section-desctop" id="whywe">
             <h2 class="whywe-section__title section-title">Почему мы?</h2>
             <ul class="whywe-section__list">
                 <li class="whywe-section__list-item">
@@ -137,7 +158,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section process-section" id="process">
+        <section class="section process-section section-desctop" id="process">
             <h2 class="section-title  process-section__title">Процесс работы с нами</h2>
             <ul class="process-section__list">
                 <li class="process-section__list-item">
@@ -164,13 +185,19 @@
                 </li>
             </ul>
         </section>
-        <section class="section our-works-section" id="our-works">
+        <section class="section our-works-section section-desctop" id="our-works">
+            <div class="overflow-video overflow-video--hidden">
+                <iframe width="350" height="300" src="https://www.youtube.com/embed/4CRRYqokBC8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
             <h2 class="section-title  our-works-section__title">Примеры наших работ</h2>
-            <ul class="our-works-section__content">
+            <ul class="our-works-section__content" id="jsVideos">
                 <li class="content-item">
                     <img src="./img/our-work-content/howard-lawrence-b-l87JKfXFcm4-unsplash (1).png" alt=""
                         class="content-item__img">
                 </li>
+
                 <li class="content-item">
                     <img src="./img/our-work-content/judy-doherty-7GXM9X3LMy8-unsplash.png" alt=""
                         class="content-item__img">
@@ -179,7 +206,8 @@
                     <img src="./img/our-work-content/murphy-zhengc-wf_T3ZuuB4U-unsplash.png" alt=""
                         class="content-item__img">
                 </li>
-                <li class="content-item">
+
+                <li class="content-item content-item__img">
                     <img src="./img/our-work-content/parker-whitson-TfP8Szg2lzM-unsplash.png" alt=""
                         class="content-item__img">
                 </li>
@@ -188,7 +216,7 @@
                 <button class="see-all-works" id="btnHrefInst">Посмотреть все работы</button>
             </div>
         </section>
-        <section class="section mission-section" id="mission">
+        <section class="section mission-section section-desctop" id="mission">
             <h2 class="section-title  mission-section__title">Наша
                 миссия</h2>
             <div class="mission-section__container">

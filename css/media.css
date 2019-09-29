@@ -1,4 +1,4 @@
-@media (min-width: 500px) {
+@media (min-width: 768px) {
     .hamburger {
         display: none;
     }
@@ -47,6 +47,83 @@
     .whywe-section__list-item {
         width: 330px;
     }
+    .overflow {
+        display: none;
+    }
+    .our-works-section__content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .process-section__list-item__hr {
+        width: 6.5%;
+    }
+    .content-item {
+        margin: 20px;
+    }
+    .section-desctop {
+        padding-top: 60px;
+        padding-right: 164px;
+        padding-left: 164px;
+    }
+    
+    .mission-section__title{
+        display: none;
+    }
+    .mission-section__title-desctop{
+        display: block;
+    }
+    .mission-section__container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .offers__item:nth-child(2n+1) {
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+    .container-text{
+        max-width: 80%;
+    }
+    .container-missinon{
+        width: 50%;
+    }
+    .container-offers{
+        width: 50%;
+    }
+    .offers__title{
+        text-align: left;
+        width: auto;
+    }
+    .offers-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 70%;
+    }
+    .underfooter-section{
+        display: flex;
+    }
+    .contact-us-section{
+        width: 50%;
+        padding-right: 170px;
+    }
+    .contacts-section{
+        width: 50%;
+        padding-left: 170px;
+    }
+    .soc-link-underfooter{
+        display: flex;
+    }
+    .email{
+        margin-bottom: 80%;
+    }
+    .contacts-section{
+        background-image: url(../img/bg-email-tel.png);
+    }
+    
+}
+
+@media (min-width: 1100px) {
     .process-section__list {
         flex-direction: row;
         align-items: center;
@@ -62,21 +139,8 @@
     .process-section__list-item {
         padding: 0;
         height: 170px;
-        width: 25%;
+        width: 20%;
         text-align: center;
     }
-    .overflow {
-        display: none;
-    }
-    .our-works-section__content {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .content-item {
-        margin: 20px;
-    }
-    .section-desctop{
-        padding-right: 164px;
-        padding-left: 164px;
-    }
+    
 }

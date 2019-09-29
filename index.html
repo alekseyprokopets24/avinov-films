@@ -16,10 +16,10 @@
 
 <!-- overflow: hidden -->
 
-<body style="">
+<body style="overflow: hidden ">
     <div class="wrapper">
         <a class="arrow-to-top" href="#general"></a>
-        <!-- <div class="preloader">
+        <div class="preloader">
             <div class="border">
                 <div class="border__item  border-hide border-bottom"></div>
                 <div class="border__item  border-hide border-right"></div>
@@ -31,7 +31,7 @@
                 <img class="preloader__logo" src="./img/logo.png" alt="">
                 <h2 class="preloader-text">Films</h2>
             </div>
-        </div> -->
+        </div>
         <header class="header" id="general">
             <div class="overflow"></div>
             <div class="header-top">
@@ -220,16 +220,20 @@
             <h2 class="section-title  mission-section__title">Наша
                 миссия</h2>
             <div class="mission-section__container">
-                <p class="container-text">Говорят, лучше один раз увидеть, чем сто раз услышать. По этой причине
-                    видеоконтент считают самым перспективным инструментом коммуникации. 
+                <div class="container-missinon">
+                    <h2 class="section-title  mission-section__title-desctop">Наша
+                        миссия</h2>
+                    <p class="container-text">Говорят, лучше один раз увидеть, чем сто раз услышать. По этой причине
+                        видеоконтент считают самым перспективным инструментом коммуникации. 
 
-                </p>
+                    </p>
 
-                <p class="container-text">Мы делаем качественный видеоконтент способный популяризировать Ваш бренд,
-                    увеличить продажи,
-                    сформировать и повысить имидж компании или просто зафиксировать самые памятные и важные моменты
-                    какого
-                    то события.</p>
+                    <p class="container-text">Мы делаем качественный видеоконтент способный популяризировать Ваш бренд,
+                        увеличить продажи,
+                        сформировать и повысить имидж компании или просто зафиксировать самые памятные и важные моменты
+                        какого
+                        то события.</p>
+                </div>
                 <div class="container-offers" id="offers">
                     <h2 class="section-title  offers__title">Что мы
                         предлагаем
@@ -247,35 +251,41 @@
                 </div>
             </div>
         </section>
-        <section class="section contacts-section" id="contacts">
-            <h2 class="section-title  constacts-section__title">Вы можете
-                связяться с нами</h2>
-            <h3 class="tel-number">Телефон: 063-749-10-70
-                095-220-28-72 </h3>
-            <h3 class="email">avinov.artem@gmail.com</h3>
-            ]
-        </section>
-        <section class="contact-us-section">
-            <h2 class="contact-us-section__title">Или рассказать
-                о своем проекте</h2>
-            <p class="contact-us-section__descr">Впоследствие мы свяжемся с Вами</p>
-            <form class="send-form">
-                <label for="name" class="form-label">Ваше имя *</label>
-                <input type="text" required minlength="3" class="form-input" id="name">
-                <label for="patronymic" class="form-label">Отчество</label>
-                <input type="text" minlength="3" class="form-input" id="patronymic">
-                <label for="company-name" class="form-label">Название Вашей компании, род деятельности</label>
-                <input type="text" class="form-input" id="company-name">
-                <label for="vision" class="form-label">Несколько слов о Вашем видении</label>
-                <input type="text" class="form-input" id="vision">
-                <label for="tele" class="form-label">Телефон *</label>
-                <input type="text" required minlength="3" class="form-input" id="tele">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-input" id="email">
-            </form>
-            <button class="btn-send-form">ОТПРАВИТЬ</button>
+        <div class="underfooter-section">
+            <section class="section contacts-section" id="contacts">
+                <h2 class="section-title  constacts-section__title">Вы можете
+                    связяться с нами</h2>
+                <h3 class="tel-number">Телефон: 063-749-10-70
+                    095-220-28-72 </h3>
+                <h3 class="email">avinov.artem@gmail.com</h3>
+                <div class="soc-link soc-link-underfooter">
+                    <a href="https://www.instagram.com/avinov.films/" target="_blank"
+                        class="soc-link__item soc-link-underfooter__item instagram"></a>
+                    <div class="soc-link__item soc-link-underfooter__item telegram"></div>
+                </div>
+            </section>
+            <section class="contact-us-section">
+                <h2 class="contact-us-section__title">Или рассказать
+                    о своем проекте</h2>
+                <p class="contact-us-section__descr">Впоследствие мы свяжемся с Вами</p>
+                <form class="send-form">
+                    <label for="name" class="form-label">Ваше имя *</label>
+                    <input type="text" required minlength="3" class="form-input" id="name">
+                    <label for="patronymic" class="form-label">Отчество</label>
+                    <input type="text" minlength="3" class="form-input" id="patronymic">
+                    <label for="company-name" class="form-label">Название Вашей компании, род деятельности</label>
+                    <input type="text" class="form-input" id="company-name">
+                    <label for="vision" class="form-label">Несколько слов о Вашем видении</label>
+                    <input type="text" class="form-input" id="vision">
+                    <label for="tele" class="form-label">Телефон *</label>
+                    <input type="text" required minlength="3" class="form-input" id="tele">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-input" id="email">
+                </form>
+                <button class="btn-send-form">ОТПРАВИТЬ</button>
 
-        </section>
+            </section>
+        </div>
         <footer class="footer">
             <div class="copyrights">Все права защищены. © 2019</div>
         </footer>

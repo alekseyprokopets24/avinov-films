@@ -8,7 +8,10 @@
     color: #FFE500;
 }
 
-
+.nav-bar__link:hover{
+    color: #FFE500;
+    transition: all 0.3s ease-in;
+}
 .border__item {
     position: absolute;
     background: #fff;
@@ -718,6 +721,9 @@
     margin: 0 auto;
 }
 
+.soc-link-underfooter{
+    display: none;
+}
 .footer {
     padding: 24px 0;
     margin: 0 auto;
@@ -781,7 +787,9 @@
     left: 65%;
     animation-delay: 0s;
 }
-
+.mission-section__title-desctop{
+    display: none;
+}
 /* Arrow to top */
 
 .arrow-to-top {

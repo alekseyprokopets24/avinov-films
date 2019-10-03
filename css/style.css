@@ -8,10 +8,11 @@
     color: #FFE500;
 }
 
-.nav-bar__link:hover{
+.nav-bar__link:hover {
     color: #FFE500;
     transition: all 0.3s ease-in;
 }
+
 .border__item {
     position: absolute;
     background: #fff;
@@ -247,6 +248,7 @@
 }
 
 .header__main {
+    width: calc(100% - 32px);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -290,12 +292,12 @@
 }
 
 .hr-line {
-
     height: 2px;
     background-color: #FFE500;
     border-radius: 3px;
 }
-.portfolio-section::before{
+
+.portfolio-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -306,12 +308,13 @@
     width: 100%;
     background: rgba(24, 24, 24, 0.5);
 }
+
 .portfolio-section {
     position: relative;
     height: 100vh;
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     box-sizing: border-box;
     flex-direction: column;
     text-align: center;
@@ -364,10 +367,6 @@
     flex-direction: column;
 }
 
-.portfolio-section__container:nth-child(1) {
-    margin-bottom: 60px;
-}
-
 .whywe-section__list-item {
     display: flex;
     align-items: center;
@@ -400,8 +399,6 @@
     color: #FFFFFF;
     max-width: 140px;
 }
-
-
 
 .whywe-section__list-item:nth-last-child(-n+2) {
     margin-bottom: 0px;
@@ -494,10 +491,9 @@
     cursor: pointer;
 }
 
-.content-item__img{
+.content-item__img {
     margin-bottom: 0;
 }
-
 
 .our-works-section__content {
     display: flex;
@@ -710,9 +706,10 @@
     margin: 0 auto;
 }
 
-.soc-link-underfooter{
+.soc-link-underfooter {
     display: none;
 }
+
 .footer {
     padding: 24px 0;
     margin: 0 auto;
@@ -776,15 +773,19 @@
     left: 65%;
     animation-delay: 0s;
 }
-.mission-section__title-desctop{
+
+.mission-section__title-desctop {
     display: none;
 }
+
 /* Arrow to top */
 
 .arrow-to-top {
-    background: url(https://image.flaticon.com/icons/svg/578/578922.svg);
-    background-size: cover;
+    background: url(../img/arrow-to-top.png);
+    background-position: center;
     background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 50px;
     height: 50px;
     position: fixed;
@@ -792,11 +793,13 @@
     right: 50px;
     z-index: 3;
 }
-
+.arrow-to-top:hover{
+    background-color: #fff;
+    transition: 0.5s all ease-in;
+} 
 /* video overflow */
 
-
-iframe{
+iframe {
     width: 100%;
 }
 

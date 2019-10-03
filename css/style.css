@@ -67,7 +67,7 @@
 }
 
 .preloader {
-    animation: preload-out 0.5s;
+    animation: preload-out 1s;
     animation-delay: 2.5s;
     height: 100vh;
     width: 100%;
@@ -786,7 +786,7 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     width: 50px;
     height: 50px;
     position: fixed;

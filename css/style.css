@@ -317,6 +317,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     padding: 40px 40px;
     background-image: url(../img/portfolio-bg.png);
